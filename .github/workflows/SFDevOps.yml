@@ -23,13 +23,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
+    #Checking Version
+      - name: SetUp Node
+        uses: actions/setup-node@v1
+        with:
+             node-version: 14
       # Runs a single command using the runners shell
       - name: Install SFDC CLI
         run: npm install sfdx-cli --global
 
       # Runs a set of commands using the runners shell
       - name: Run a single-line script
-        run: |
-          
-          echo Installed SFDX CLI and npm .
+        run:
+            echo Installed SFDX CLI and npm .
