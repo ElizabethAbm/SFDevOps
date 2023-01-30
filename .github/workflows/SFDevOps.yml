@@ -33,7 +33,7 @@ jobs:
         run: npm install sfdx-cli --global
       # Connecting SF Org
       - name: Integrating Salesforce
-        run: sfdx force:auth:jwt:grant --clientid 3MVG9pRzvMkjMb6k3VUR7HbvEBXGSofCufnlH7rB9bxBDd7.NqYw6GK4wWLbicIyZaJ8RuOOYj73ivT_Z0SbY --jwtkeyfile ./buildfiles/server.key --username eabraham@gmail.com --instanceurl https://suyati43-dev-ed.my.salesforce.com
+        run: sfdx force:auth:jwt:grant --clientid 3MVG9pRzvMkjMb6k3VUR7HbvEBXGSofCufnlH7rB9bxBDd7.NqYw6GK4wWLbicIyZaJ8RuOOYj73ivT_Z0SbY --jwtkeyfile server.key --username eabraham@gmail.com --instanceurl https://suyati43-dev-ed.my.salesforce.com
       # Runs a set of commands using the runners shell
       - name: Run a single-line script
         run:
